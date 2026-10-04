@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #10151c;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin: 0 0 15px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.stats div {
+    background: #1b2530;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #303d4b;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 15px;
+}
+
+.game-area {
+    position: relative;
+}
+
+canvas {
+    width: 100%;
+    background: #16251a;
+    border-radius: 10px;
+    border: 2px solid #35483a;
+    display: block;
+}
+
+.message {
+    margin-top: 10px;
+    background: #1b2530;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+aside {
+    background: #1b2530;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #273442;
+    color: white;
+    border: 1px solid #46576a;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #34475a;
+}
+
+button.selected {
+    border: 2px solid #4da3ff;
+}
+
+.tower-button {
+    text-align: left;
+}
+
+.tower-button small {
+    display: block;
+    margin-top: 4px;
+    color: #aeb9c5;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #3b4652;
+    margin: 15px 0;
+}
+
+#towerInfo {
+    color: #b8c2cc;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}

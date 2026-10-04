@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castle Defense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game-container">
+
+    <header>
+        <h1>🏰 Castle Defense</h1>
+
+        <div class="stats">
+            <div>❤️ Health: <span id="health">20</span></div>
+            <div>💰 Gold: <span id="gold">300</span></div>
+            <div>🌊 Wave: <span id="wave">0</span>/50</div>
+            <div>⭐ Score: <span id="score">0</span></div>
+            <div>⚡ FPS: <span id="fps">60</span></div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="game-area">
+
+            <canvas id="gameCanvas" width="900" height="550"></canvas>
+
+            <div class="message" id="message">
+                Select a tower and click on the map.
+            </div>
+
+        </div>
+
+        <aside>
+
+            <h2>Towers</h2>
+
+            <button class="tower-button selected" id="basicButton">
+                🔵 Basic Tower
+                <small>Cost: 60</small>
+            </button>
+
+            <button class="tower-button" id="rapidButton">
+                🟡 Rapid Tower
+                <small>Cost: 90</small>
+            </button>
+
+            <button class="tower-button" id="iceButton">
+                🟣 Ice Tower
+                <small>Cost: 80</small>
+            </button>
+
+            <hr>
+
+            <button id="startWave">Start Wave</button>
+
+            <button id="pauseGame">Pause</button>
+
+            <button id="speedGame">Speed: 1x</button>
+
+            <button id="restartGame">Restart</button>
+
+            <hr>
+
+           <h3>Selected Tower</h3>
+
+<div id="towerInfo">
+    No tower selected
+</div>
+
+<button id="upgradeTower">Upgrade</button>
+<button id="sellTower">Sell</button>
+
+        </aside>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
